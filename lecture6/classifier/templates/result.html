@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  <div class="col content">
+    <h1>判定結果</h1>
+    {{result}}
+    <p><img src="{{filepath}}"></p>
+    <form method="get" action="/">
+      <button class="submit">戻る</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

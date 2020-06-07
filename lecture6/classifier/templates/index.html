@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  <div class="col content">
+    <h1>画像分類</h1>
+    <form method="post", enctype="multipart/form-data", action="/result">
+      <input name="file" type="file">
+      <input type="submit", value="判定">
+    </form>
+  </div>
+</div>
+{% endblock %}
